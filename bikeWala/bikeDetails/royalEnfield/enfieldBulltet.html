@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6481257ff6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrV Stores</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,400;1,600;1,800&family=Roboto+Mono:ital,wght@0,500;1,400&family=Young+Serif&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .rating span{
+            margin-right: 20px;
+        }
+        .rating i{
+            color: blue;
+        }
+        .carousel-inner img {
+            width: 100px;
+            height: 300px;
+            object-fit: contain; 
+        }
+        .bike-header{
+            border: 13px solid rgb(255, 250, 250);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;  
+           flex-wrap: wrap;
+        }
+        .bike-price{
+            background-color: red;
+            margin: 30px;         
+            text-align: left;
+        }
+        .carousel{
+            flex-basis: 40%;
+        }
+        .bike-details {
+            
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #f8f8f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+        }
+        .bike-price {
+            
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 50px;
+            margin: 20px auto;
+            max-width: 500px;
+            background-color: #f8f8f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+        }
+    
+    
+        
+           /* Common styles for advantage and disadvantage boxes */
+           .review-box {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Styles for advantage box */
+        .advantage-box {
+            background-color: #e5f5f5;
+        }
+
+        /* Styles for disadvantage box */
+        .disadvantage-box {
+            background-color: #ffeaea;
+        }
+
+        /* Hover effect */
+        .review-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        .fa-thumbs-up{
+            padding: 0px 5px 0px 5px;
+            color: green;
+        }
+        .fa-thumbs-down{
+            padding: 0px 5px 0px 5px;
+            color: red;
+        }
+        .fa-gas-pump{
+            margin:5px 0px 0px 20px;
+            color: rgb(67, 205, 251);
+            text-align: center;
+            font-size: 70px;
+        }
+        .manualBtn{
+            background-color: rgb(91, 91, 237);
+            width: 100%;
+        }
+        .bike-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .info-value {
+            color: #777;
+        }
+        ol {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    
+   .bike-header{
+    flex-direction: column;
+   }
+}
+        
+            </style>
+        </head>
+        <body>
+            <div class="bike-theader">
+                <h1 class="text-center">Royal Enfield Bullet 350 </h1>
+                <div class="rating text-center">
+                    <span><i class="fa-solid fa-star"></i>   4.4/5</span>
+                    <span>11 Reviews</span>
+                    <span>Rate & Win</span>
+                </div>
+            </div>
+            <div class="bike-img">
+                    
+<!-- Carousel -->
+<div class="container mt-5">
+    <div class="bike-header">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+                <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+            </ol>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../bikeDetails/royalEnfield/images/EnfieldBullet/bullet350militaryred.png" alt="honda sp125" class="d-block w-100">
+                </div>
+               
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <a class="carousel-control-prev" href="#demo" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#demo" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+        <div class="bike-price">
+            <h3 class="mb-4">Price</h3>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    
+                    <span class="font-weight-bold ml-2 h2">&#8377;1,73,700</span>
+                    <div>
+                        <span class="font-weight-bold ml-2 text-muted">Avg Ex-Showroom price</span>
+                    </div>
+                  
+                </div>
+                <p class="text-primary">Check on-road price</p>
+            </div>
+            
+          
+            <button class="btn manualBtn btn-primary btn-block mt-3">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+            <div class="container mt-4 bike-details">
+            <h2>Honda SP 125 Detail</h2>
+            <div class="bike-info">
+                <div class="info-item">
+                    <div class="info-label">Engine Capacity</div>
+                    <div class="info-value">349 cc</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Mileage</div>
+                    <div class="info-value">36 kmpl</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Transmission</div>
+                    <div class="info-value">5 Speed Manual</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Kerb Weight</div>
+                    <div class="info-value">195 kg</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Fuel Tank Capacity</div>
+                    <div class="info-value">13 litres</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Seat Height</div>
+                    <div class="info-value">805 mm</div>
+                </div>
+            </div>
+        </div>
+
+<!-- Color -->
+<div class="container mt-5">
+    <h1 class="text-center">Bike Color Selector</h1>
+    <div class="row">
+        <!-- Selected Image -->
+        <div class="col-md-9">
+            <div id="colorCarousel" class="carousel slide" data-bs-ride="false">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../bikeDetails/royalEnfield/images/EnfieldBullet/bullet350militaryred.png" alt="Default Bike" class="d-block w-100" width="500" height="500">
+                    </div>
+                   
+                    <!-- Add more images as needed with width and height attributes -->
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <a class="carousel-control-prev" href="#colorCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#colorCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Color Buttons -->
+        <div class="col-md-3 mt-3">
+            
+            <button class="btn btn-danger btn-block" onclick="changeSlide(0)">Red</button>
+
+            <!-- Add more color buttons as needed -->
+        </div>
+    </div>
+</div>
+<!-- Mileage -->
+<div class="container mt-5">
+    <div class="mileage-box review-box">
+        <div class="row">
+            <!-- Left side with icon -->
+            <div class="col-md-2">
+                <i class="fa-solid fa-gas-pump"></i>
+            </div>
+            <!-- Right side content -->
+            <div class="col-md-10">
+                <h2>Mileage</h2>
+                <p>The bike offers great fuel efficiency and excellent mileage, making it an ideal choice for fuel-conscious riders.</p>
+            </div>
+        </div>
+        <!-- Button below -->
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <a href="#" class="btn manualBtn btn-block">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Review -->
+<div class="container mt-5">
+    <h1 class="text-center">Royal Enfield Bullet 350 Review</h1>
+    <div class="advantage-box review-box">
+        <h2><i class="fa-regular fa-thumbs-up"></i>Good Things</h2>
+        <ul>
+            <li>It has authentic old-school styling</li>
+            <li>Gets a new J-series engine</li>
+            <li>Comes with updated underpinnings</li>
+        </ul>
+    </div>
+    <div class="disadvantage-box review-box">
+        <h2><i class="fa-regular fa-thumbs-down"></i>Could be Better</h2>
+        <ul>
+            <ul>
+                <li>Could get more features</li>
+                <li>No kick-start</li>
+            </ul>
+        </ul>
+    </div>
+</div>
+
+<!-- su,mmarry -->
+<div class="container mt-5">
+    <h1 class="text-center">Royal Enfield Bullet 350 Summary</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2>Key Highlights</h2>
+            <ul>
+                <li>Street bike available in 3 variants and 5 colours</li>
+                <li>Price starts at Rs. 1,73,562 in India</li>
+                <li>Powered by 349cc BS6 engine with 20.2 bhp and 27 Nm torque</li>
+                <li>Front disc and rear drum brakes with anti-locking braking system</li>
+                <li>Weighs 195 kg with a fuel tank capacity of 13 liters</li>
+            </ul>
+            
+            <h2>Overview</h2>
+            <p>The Royal Enfield Bullet 350 has received a major update in the 2023 model and is now based on the same J-platform as the Classic and Hunter 350. Royal Enfield has retained the iconic design elements of the Bullet, including the squared-off rear end, round headlamp, chrome components, single-piece seat, and tank design.</p>
+            
+            <h2>Engine and Performance</h2>
+            <p>The latest Bullet 350 is powered by a 349cc, single-cylinder engine that offers 20.2 bhp at 6,100rpm and 27Nm of peak torque at 4,000rpm. It is linked to a five-speed gearbox. The bike rides on telescopic front forks and dual rear shocks, providing a comfortable and stable ride.</p>
+            
+            <h2>Features</h2>
+            <p>The Bullet 350 is minimalistic on the feature front, with bulb illumination throughout. It comes with a semi-digital instrument cluster, which includes an analogue console and a digital inset for the fuel level readout, trip meter, and more. However, it misses out on the tripper navigation feature.</p>
+            
+            <h2>Variants and Colors</h2>
+            <p>Royal Enfield offers the Bullet 350 in three variants and a choice of five color options.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+       // Function to change the active slide of the carousel based on color
+       function changeSlide(colorIndex) {
+            // Get the carousel element by ID
+            var colorCarousel = document.getElementById("colorCarousel");
+            
+            // Activate the corresponding slide
+            var carouselInstance = new bootstrap.Carousel(colorCarousel);
+            carouselInstance.to(colorIndex);
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6481257ff6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrV Stores</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,400;1,600;1,800&family=Roboto+Mono:ital,wght@0,500;1,400&family=Young+Serif&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .rating span{
+            margin-right: 20px;
+        }
+        .rating i{
+            color: blue;
+        }
+        .carousel-inner img {
+            width: 100px;
+            height: 300px;
+            object-fit: contain; 
+        }
+        .bike-header{
+            border: 13px solid rgb(255, 250, 250);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;  
+           flex-wrap: wrap;
+        }
+        .bike-price{
+            background-color: red;
+            margin: 30px;         
+            text-align: left;
+        }
+        .carousel{
+            flex-basis: 40%;
+        }
+        .bike-details {
+            
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #f8f8f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+        }
+        .bike-price {
+            
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 50px;
+            margin: 20px auto;
+            max-width: 500px;
+            background-color: #f8f8f8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+        }
+    
+    
+        
+           /* Common styles for advantage and disadvantage boxes */
+           .review-box {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Styles for advantage box */
+        .advantage-box {
+            background-color: #e5f5f5;
+        }
+
+        /* Styles for disadvantage box */
+        .disadvantage-box {
+            background-color: #ffeaea;
+        }
+
+        /* Hover effect */
+        .review-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        .fa-thumbs-up{
+            padding: 0px 5px 0px 5px;
+            color: green;
+        }
+        .fa-thumbs-down{
+            padding: 0px 5px 0px 5px;
+            color: red;
+        }
+        .fa-gas-pump{
+            margin:5px 0px 0px 20px;
+            color: rgb(67, 205, 251);
+            text-align: center;
+            font-size: 70px;
+        }
+        .manualBtn{
+            background-color: rgb(91, 91, 237);
+            width: 100%;
+        }
+        .bike-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .info-value {
+            color: #777;
+        }
+        ol {
+  list-style-type: none;
+}
+.btn-white{
+    background-color: rgb(214, 227, 227);
+}
+
+@media (max-width: 768px) {
+    
+   .bike-header{
+    flex-direction: column;
+   }
+} 
+        
+            </style>
+        </head>
+        <body>
+            <div class="bike-theader">
+                <h1 class="text-center">Honda Activa 125 </h1>
+                <div class="rating text-center">
+                    <span><i class="fa-solid fa-star"></i>   4.4/5</span>
+                    <span>326 Reviews</span>
+                    <span>Rate & Win</span>
+                </div>
+            </div>
+            <div class="bike-img">
+                    
+<!-- Carousel -->
+<div class="container mt-5">
+    <div class="bike-header">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+                <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+            </ol>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../bikeDetails/honda/images/hondaActiva/activa6gmatteaxisgreymetallic.png" alt="Honda shine" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../bikeDetails/honda/images/hondaActiva/activa6gmattemagnificentcoppermetallic.png" alt="Honda shine" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <a class="carousel-control-prev" href="#demo" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#demo" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+        <div class="bike-price">
+            <h3 class="mb-4">Price</h3>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    
+                    <span class="font-weight-bold ml-2 h2">&#8377;82,042</span>
+                    <div>
+                        <span class="font-weight-bold ml-2 text-muted">Avg Ex-Showroom price</span>
+                    </div>
+                  
+                </div>
+                <p class="text-primary">Check on-road price</p>
+            </div>
+            
+          
+            <button class="btn manualBtn btn-primary btn-block mt-3">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+            <div class="container mt-4 bike-details">
+            <h2>Honda Activa Detail</h2>
+            <div class="bike-info">
+                <div class="info-item">
+                    <div class="info-label">Engine Capacity</div>
+                    <div class="info-value">124 cc</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Mileage</div>
+                    <div class="info-value">47.5 kmpl</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Kerb Weight</div>
+                    <div class="info-value">110 kg</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Fuel Tank Capacity</div>
+                    <div class="info-value">53 litres</div>
+                </div>
+            </div>
+        </div>
+
+<!-- Color -->
+<div class="container mt-5">
+    <h1 class="text-center">Bike Color Selector</h1>
+    <div class="row">
+        <!-- Selected Image -->
+        <div class="col-md-9">
+            <div id="colorCarousel" class="carousel slide" data-bs-ride="false">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../bikeDetails/honda/images/hondaActiva/activa6gpearlpreciouswhite.png" alt="Default Bike" class="d-block w-100" width="500" height="500">
+                    </div>
+                    
+                    <!-- Add more images as needed with width and height attributes -->
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <a class="carousel-control-prev" href="#colorCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#colorCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Color Buttons -->
+        <div class="col-md-3 mt-3">
+            <button class="btn btn-white btn-block" onclick="changeSlide(0)">White</button>
+           
+            <!-- Add more color buttons as needed -->
+        </div>
+    </div>
+</div>
+<!-- Mileage -->
+<div class="container mt-5">
+    <div class="mileage-box review-box">
+        <div class="row">
+            <!-- Left side with icon -->
+            <div class="col-md-2">
+                <i class="fa-solid fa-gas-pump"></i>
+            </div>
+            <!-- Right side content -->
+            <div class="col-md-10">
+                <h2>Mileage</h2>
+                <p>The bike offers great fuel efficiency and excellent mileage, making it an ideal choice for fuel-conscious riders.</p>
+            </div>
+        </div>
+        <!-- Button below -->
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <a href="#" class="btn manualBtn btn-block">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Review -->
+<div class="container mt-5">
+    <h1 class="text-center">Honda Shine Review</h1>
+    <div class="advantage-box review-box">
+        <h2><i class="fa-regular fa-thumbs-up"></i>Good Things</h2>
+        <ul>
+            <li>Known for its super smooth 125cc engine</li>
+            <li>Has a good service network</li>
+            <li>Gets modern technology</li>
+        </ul>
+    </div>
+    <div class="disadvantage-box review-box">
+        <h2><i class="fa-regular fa-thumbs-down"></i>Could be Better</h2>
+        <ul>
+            <li>Could get better brakes</li>
+            <li>Could get better suspension setup</li>
+        </ul>
+    </div>
+</div>
+<!-- Summary -->
+<div class="container mt-5">
+    <h1 class="text-center">Honda Activa 125 Summary</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2>Overview</h2>
+            <p>
+                Honda Activa 125 is a scooter available in 4 variants and 6 colours. Activa 125 price starts at Rs. 82,042 in India with top variant price starting from Rs. 91,233.
+            </p>
+            
+            <h2>Key Specifications</h2>
+            <ul>
+                <li>Engine Capacity: 124cc BS6</li>
+                <li>Power: 8.19 bhp</li>
+                <li>Torque: 10.4 Nm</li>
+                <li>Fuel Tank Capacity: 5.3 liters</li>
+            </ul>
+
+            <h2>Features</h2>
+            <p>
+                Honda Motorcycle & Scooter India has launched the OBD2-compliant 2023 Activa 125 range in our market, and this 125cc scooter is now available in four variants – Drum, Drum Alloy, Disc, and H-Smart. All variants retain the styling cues from the previous version and thus come with a single-pod headlight with a body-coloured cowl, apron-mounted front turn indicators, a body-coloured front fender, and chrome garnishing on the body panel and apron.
+            </p>
+            
+            <h2>Mechanical Specifications</h2>
+            <p>
+                The mechanical specifications retain the 123.97cc, single-cylinder, air-cooled motor that delivers a maximum output of 8.18bhp at 6,500rpm and a peak torque of 10.3Nm at 5,000rpm. However, Honda Motorcycle and Scooter India has added the necessary hardware to comply with the OBD2-norms. Meanwhile, the scooter range retains the underbone frame and uses telescopic front forks and a three-step adjustable rear spring to handle the suspension tasks. The scooter rides on 12-inch front and 10-inch wheels. Then, the anchoring tasks on the base variants include drum brakes on both wheels, while the higher versions will use a 190mm disc brake at the front and a 130mm drum unit at the rear.
+            </p>
+
+            <h2>Competition</h2>
+            <p>
+                The Activa 125 rivals the likes of the TVS Jupiter 125, Hero Destini 125, Yamaha Fascino 125, and Suzuki Access 125 in the Indian market.
+            </p>
+        </div>
+    </div>
+</div>
+
+</div>
+<script>
+       // Function to change the active slide of the carousel based on color
+       function changeSlide(colorIndex) {
+            // Get the carousel element by ID
+            var colorCarousel = document.getElementById("colorCarousel");
+            
+            // Activate the corresponding slide
+            var carouselInstance = new bootstrap.Carousel(colorCarousel);
+            carouselInstance.to(colorIndex);
+        }
+</script>
+</body>
+</html>
